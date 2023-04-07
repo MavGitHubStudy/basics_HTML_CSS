@@ -1,0 +1,163 @@
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url("./fonts/Gilroy-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("./fonts/Gilroy-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url("./fonts/Gilroy-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy-SemiBold";
+  src: url("./fonts/Gilroy-Semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* список стилей для обнуления */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+/* конец списка стилей для обнуления */
+
+/* --- container ---- */
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+/* -- end container - */
+
+/* ----- header ----- */
+header {
+  margin-bottom: 84px;
+}
+
+.main_logo {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.main_logo__text {
+  font-family: "Gilroy-Bold";
+  font-size: 24px;
+  line-height: 28px;
+  color: #000;
+}
+
+.main_logo__text-color {
+  color: #f25822;
+}
+
+.navigation {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.link {
+  font-family: Gilroy-SemiBold;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.link-unselect {
+  color: #000;
+}
+
+.link-select {
+  color: #f25822;
+}
+/* --- end header --- */
+
+/* ------ main ------ */
+main {
+  margin-bottom: 162px;
+}
+
+.main__content {
+  /* заготовка */
+}
+
+.main__content_left-side {
+  width: 522px;
+}
+
+.big_title {
+  font-family: "Gilroy-Bold";
+  font-size: 60px;
+  line-height: 70px;
+  color: #000;
+  margin-bottom: 17px;
+}
+
+.text {
+  font-family: "Gilroy-Medium";
+  font-size: 20px;
+  line-height: 23px;
+  color: #888;
+  width: 466px;
+  margin-bottom: 37px;
+}
+
+.btns-list {
+  /* заготовка */
+}
+
+.btn {
+  font-family: "Gilroy-Bold";
+  font-size: 15px;
+  line-height: 18px;
+  border: 0;
+}
+
+.btn__start-now {
+  background: #f25822;
+  box-shadow: 4px 4px 8px rgba(242, 88, 34, 0.2);
+  border-radius: 50px;
+  color: #fff;
+  padding: 15px 30px;
+}
+
+.btn__watch-video {
+  background: #fff;
+  color: #aaa;
+}
+/* ---- end main ---- */
+
+/* ----- footer ----- */
+footer {
+  margin-bottom: 96px;
+}
+
+.logos {
+  padding-top: 96px;
+}
+/* --- end footer --- */ ;
