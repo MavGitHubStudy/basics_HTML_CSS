@@ -1,0 +1,14 @@
+/* подключение шрифта */
+body {
+  font-family: "Releway", sans-serif;
+}
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.center {
+  padding-left: calc(50% - 580px);
+  padding-right: calc(50% - 580px);
+}
