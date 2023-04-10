@@ -65,12 +65,13 @@ header {
 .main_logo {
   display: flex;
   justify-content: space-between;
+  align-items: center; /* замечание преподавателя */
 }
 
 .navigation {
   display: flex;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  /* padding-top: 12px;
+  padding-bottom: 12px; */
   width: 534px;
   justify-content: space-between;
 }
