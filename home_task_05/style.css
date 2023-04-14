@@ -1,0 +1,315 @@
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url("./fonts/Gilroy-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("./fonts/Gilroy-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url("./fonts/Gilroy-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy-SemiBold";
+  src: url("./fonts/Gilroy-Semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* список стилей для обнуления */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+/* конец списка стилей для обнуления */
+
+/* --- container ---- */
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+/* -- end container - */
+
+/* ----- header ----- */
+header {
+  margin-top: 40px;
+  margin-bottom: 84px;
+}
+
+.main_logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* замечание преподавателя */
+}
+
+.navigation {
+  display: flex;
+  /* padding-top: 12px;
+  padding-bottom: 12px; */
+  width: 534px;
+  justify-content: space-between;
+}
+
+.link {
+  font-family: Gilroy-SemiBold;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.link-unselect {
+  color: #000;
+}
+
+.link-select {
+  color: #f25822;
+}
+/* --- end header --- */
+
+/* ------ main ------ */
+main {
+  margin-bottom: 162px;
+}
+
+.main__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__content_left-side {
+  width: 522px;
+}
+
+.big_title {
+  font-family: "Gilroy-Bold";
+  font-size: 60px;
+  line-height: 70px;
+  color: #000;
+  margin-bottom: 17px;
+}
+
+.text {
+  font-family: "Gilroy-Medium";
+  font-size: 20px;
+  line-height: 23px;
+  color: #888;
+  width: 466px;
+  margin-bottom: 37px;
+}
+
+.btns-list {
+  display: flex;
+  gap: 72px;
+}
+
+.btn {
+  font-family: "Gilroy-Bold";
+  font-size: 15px;
+  line-height: 18px;
+  border: 0;
+}
+
+.btn__start-now {
+  background: #f25822;
+  width: 140px;
+  box-shadow: 4px 4px 8px rgba(242, 88, 34, 0.2);
+  border-radius: 50px;
+  color: #fff;
+  padding: 15px 30px;
+}
+
+.btn__watch-video {
+  background: #fff;
+  color: #aaa;
+}
+/* ---- end main ---- */
+
+/* ----- main_logos ----- */
+main_logos {
+  margin-bottom: 96px;
+}
+
+.logos {
+  display: flex;
+  padding-top: 96px;
+  justify-content: space-between;
+}
+/* --- end main_logos --- */
+
+/* ----- cards_list1 ---- */
+.cards_list1 {
+  display: grid;
+  grid-template-columns: 310px 60px 30px 310px 30px 60px 310px;
+  grid-template-rows: 40px 226px 25px;
+  column-gap: 0px;
+  row-gap: 0px;
+  padding-top: 140px;
+  padding-right: 0px;
+  padding-bottom: 125px;
+  padding-left: 0px;
+}
+
+.card_lst1 {
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+}
+
+.card_lst1 h2 {
+  font-family: "Gilroy-Bold";
+  font-size: 24px;
+  line-height: 28px;
+  color: #000;
+  padding-top: 25px;
+  padding-bottom: 17px;
+}
+
+.card_lst1 p {
+  font-family: "Gilroy-Regular";
+  font-size: 15px;
+  line-height: 150%;
+  /* or 22px */
+  color: #666;
+}
+
+.card_lst1 h4 {
+  font-family: "Gilroy-Bold";
+  font-size: 11px;
+  line-height: 150%;
+  /* identical to box height, or 16px */
+  color: #000;
+  padding-top: 25px;
+}
+
+.lst1_card_item1 {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.lst1_card_item2 {
+  grid-column: 3 / 6;
+  grid-row: 1 / 4;
+  padding: 40px 30px 25px 30px;
+  background: #fff;
+  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+  box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
+}
+
+.lst1_card_item3 {
+  grid-column: 7 / 8;
+  grid-row: 2 / 3;
+}
+/* --- end cards_list1 -- */
+
+/* --------- why -------- */
+.why {
+  background-color: #fafafa;
+  padding-right: 0px;
+  padding-left: 0px;
+  height: 919px;
+}
+
+.why__top {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.why__top h2 {
+  font-family: "Gilroy-Bold";
+  font-size: 45px;
+  line-height: 53px;
+  color: #000;
+  margin-top: 92px;
+  margin-bottom: 19px;
+}
+
+.why__top p {
+  width: 682px;
+  font-family: "Gilroy-Regular";
+  font-size: 16px;
+  line-height: 150%;
+  /* or 24px */
+  color: #666;
+  text-align: center;
+  margin-bottom: 51px;
+}
+
+.cards_why_list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 0px;
+}
+
+.card_why {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: #fff;
+}
+
+.card_why h2 {
+  font-family: "Gilroy-Bold";
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  margin-bottom: 22px;
+}
+
+.card_why p {
+  font-family: "Gilroy-Regular";
+  font-size: 15px;
+  line-height: 150%;
+  padding-left: 30px;
+  padding-right: 30px;
+  /* or 22px */
+  color: #aaa;
+  margin-bottom: 54px;
+}
+
+.btn__learn-more {
+  background: #f25822;
+  width: 150px;
+  height: 50px;
+  box-shadow: 4px 4px 8px rgba(242, 88, 34, 0.2);
+  border-radius: 50px;
+  color: #fff;
+  padding: 15px 30px;
+  border: 0px;
+}
+
+.card_why_img2,
+.card_why_text2 {
+  box-shadow: 15px 25px 60px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* ------ end why ------- */
