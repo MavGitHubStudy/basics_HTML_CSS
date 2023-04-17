@@ -1,0 +1,21 @@
+.header {
+  max-width: 1200px;
+  min-height: 150px;
+  border: 1px solid #000;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+}
+
+.item {
+  width: 250px;
+  height: 250px;
+  /* max-width: 250px; */
+  /* min-width: 250px; */
+  /* min-height: 250px; */
+  border: 1px solid #000;
+  /* overflow: hidden; */
+  overflow: scroll;
+}

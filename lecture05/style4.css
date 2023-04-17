@@ -1,0 +1,24 @@
+body {
+  width: 1200px;
+}
+
+.header {
+  max-width: 1200px;
+  min-height: 150px;
+  border: 1px solid #000;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  background-color: #ccc;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 33.333333%; /* 6 троек после точки */
+  height: 250px;
+  border: 1px solid #000;
+  overflow: scroll;
+  box-sizing: border-box; /* не даёт учитывать значение рамки */
+}

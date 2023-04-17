@@ -1,0 +1,23 @@
+/* .item {
+  width: 1200px;
+  height: 350px;
+  border: 1px solid #000;
+} */
+
+/* .item {
+  width: 1200px;
+  height: 150px;
+  border: 1px solid #000;
+} */
+
+/* .item {
+  width: 75%;
+  height: 150px;
+  border: 1px solid #000;
+} */
+
+.item {
+  max-width: 1200px;
+  min-height: 150px;
+  border: 1px solid #000;
+}

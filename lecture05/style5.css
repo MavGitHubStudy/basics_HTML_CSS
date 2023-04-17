@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* body {
+  width: 1200px;
+} */
+
+.header {
+  max-width: 1200px;
+  min-height: 100vh;
+  border: 1px solid #000;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  background-color: #ccc;
+  flex-wrap: wrap;
+}
+
+.item {
+  /* ширину лучше задвать в %, а ширину в vh */
+  width: 33.333333%;
+  /* 6 троек после точки */
+  /* width: 33.333333vw; */
+
+  /* height: 250px; */
+  height: 50vh;
+  border: 1px solid #000;
+  /* overflow: scroll; */
+  overflow: auto;
+  box-sizing: border-box; /* не даёт учитывать значение рамки */
+}
