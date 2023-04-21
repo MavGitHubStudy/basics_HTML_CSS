@@ -111,7 +111,23 @@ main {
   padding: 15px 30px;
   border: none;
 }
-/* --------- end main --------- */
+
+/* .btn2 {
+  display: flex;
+  gap: 10px;
+} */
+
+/* .btn2::befor {
+  content: url("./img/play.png");
+  margin-right: 10px;
+
+}
+
+
+/* без пробела */
+/* .btn.btn2 { 
+  display: flex;
+} */
 
 .logos {
   display: flex;
@@ -257,5 +273,34 @@ main {
     font-size: 14px;
     line-height: 22px;
     margin-bottom: 16px;
+  }
+
+  .big-title {
+    width: 343px;
+    font-size: 28px;
+    margin-bottom: 64px;
+  }
+
+  .text {
+    width: 343px;
+    margin-bottom: 39px;
+  }
+
+  .btns-list {
+    flex-direction: column;
+    gap: 24px; /* расстояние между кнопками */
+    align-items: center;
+  }
+
+  .main__content img {
+    width: 343px;
+  }
+
+  .logos {
+    width: auto;
+  }
+
+  .card {
+    width: 343px; /* вместо 362px ! */
   }
 }
