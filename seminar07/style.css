@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&display=swap");
+
+* {
+  /* список стилей для обнуления */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* очень важный параметр! */
+  text-decoration: none;
+}
+
+body {
+  scroll-behavior: smooth; /* плавность прокрутки сайта */
+  text-rendering: optimizeSpeed; /* отображение текста после полной прогрузки */
+  background: #020a18;
+}
+
+img {
+  display: block; /* превращает строчный тип в блочный (чтобы не оборачивать текст в блок div) */
+  max-width: 100%; /* максимально доступная ширина */
+} /* конец списка стилей для обнуления */
+
+.container {
+  width: 1146px;
+  margin: 0 auto; /* auto - посередине */
+}
+
+/* ---------- header ---------- */
+header {
+  margin-bottom: 160px;
+}
+
+.navigation {
+  display: flex;
+  gap: 40px; /* gap - расстояние между элементами */
+  padding-top: 39px;
+  padding-bottom: 39px;
+  justify-content: center;
+}
+
+.link {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+/* -------- end header -------- */
+
+/* ----------- main ----------- */
+main {
+  margin-bottom: 197px;
+}
+
+.main__content {
+  display: flex; /* для позиционирования дочерних элементов */
+  justify-content: space-between;
+}
+
+.main__content__left-side {
+  width: 604px;
+}
+
+.small-title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 160%;
+  text-transform: uppercase;
+  color: #3a68b8;
+  margin-bottom: 10px;
+}
+
+.big-title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 55px;
+  line-height: 130%;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 160%;
+  color: #ffffff;
+  opacity: 0.7;
+  width: 558px;
+  margin-bottom: 50px;
+}
+
+.btns-list {
+  display: flex;
+  gap: 20px; /* расстояние между кнопками */
+}
+
+.btn {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  color: #ffffff;
+  background: #3a68b8;
+  border-radius: 5px;
+  padding: 15px 30px;
+  border: none;
+}
+/* --------- end main --------- */
+
+.logos {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 197px;
+  margin-bottom: 99px;
+}
+
+.cards_list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 30px; /* расстояние между карточками по горизонтали и вертикали */
+  opacity: 0.7;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  flex-direction: column; /* выравнивание по центру друг за другом в колонку */
+  background: #132035;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  gap: 30px;
+  padding: 30px;
+}
+
+.card h2 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 125%;
+  /* or 31px */
+  opacity: 0.7;
+}
+
+.card p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 160%;
+  /* or 26px */
+  opacity: 0.7;
+}
+
+.card_item4 {
+  grid-column: span 2;
+  grid-row: span 2;
+  gap: 60px;
+}
+
+/* адаптив для планшенат */
+@media (max-width: 1145px) {
+  /* 848px */
+  .container {
+    width: 767px;
+  }
+
+  .main__content {
+    flex-direction: column;
+    align-items: center;
+    gap: 128px;
+    padding: 0 81px;
+  }
+
+  .small-title {
+    font-size: 16px;
+  }
+
+  .big-title {
+    width: 604px;
+    font-size: 48px;
+  }
+
+  .main__content img {
+    width: 414px;
+  }
+
+  .logos {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+    width: 604px;
+    padding-top: 197px;
+    /* margin-bottom: 99px; */
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .cards_list {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 32px;
+  }
+
+  .card {
+    background: rgba(19, 32, 53, 0.4);
+    width: 362px;
+    border-radius: 10px;
+  }
+}
+
+/* адаптив для мобилки */
+@media (max-width: 375px) {
+  /* 848px */
+  .container {
+    width: 343px;
+  }
+
+  /* ---------- header ---------- */
+  header {
+    margin-bottom: 64px;
+  }
+
+  .navigation {
+    gap: 16px; /* gap - расстояние между элементами */
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+
+  .link {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  /* -------- end header -------- */
+
+  /* ----------- main ----------- */
+  .main__content {
+    padding: 0;
+  }
+
+  .main__content__left-side {
+    width: 343px;
+    text-align: center;
+  }
+
+  .small-title {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 16px;
+  }
+}
