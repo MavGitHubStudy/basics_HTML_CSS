@@ -1,0 +1,17 @@
+/* .main__audio {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.main__video {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main__video h2 {
+  z-index: 10;
+}

@@ -1,0 +1,14 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper__list {
+  text-decoration: none;
+}
+.wrapper__list__item {
+  color: red;
+}
+.wrapper__list__item_green {
+  color: green;
+}/*# sourceMappingURL=style.css.map */

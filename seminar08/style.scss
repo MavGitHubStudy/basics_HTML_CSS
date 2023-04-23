@@ -1,0 +1,22 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // .wrapper__list {
+  //   text-decoration: none;
+  // }
+  &__list {
+    text-decoration: none;
+
+    &__item {
+      color: red;
+    }
+
+    &__item_green {
+      color: green;
+    }
+  }
+
+}
+
