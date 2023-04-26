@@ -1,0 +1,28 @@
+* {
+  text-decoration: none;
+}
+
+.menu__list a:hover {
+  color: red;
+}
+
+.menu__list a:active {
+  /* ЛКМ */
+  color: green;
+}
+
+.menu__list:first-child {
+  text-decoration: underline;
+}
+
+.menu__list:last-child {
+  font-weight: bold;
+}
+
+.menu__list:nth-child(3) a {
+  background-color: orange;
+}
+
+.menu__list:nth-child(3) a:focus {
+  background-color: orange;
+}

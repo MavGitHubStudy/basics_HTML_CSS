@@ -1,0 +1,12 @@
+svg {
+  width: 100px;
+  height: 100px;
+}
+
+svg:hover {
+  fill: purple;
+}
+
+svg:active {
+  fill: lightgreen;
+}
