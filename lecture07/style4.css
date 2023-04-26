@@ -1,0 +1,78 @@
+.button {
+  display: block;
+  width: 120px;
+  height: 40px;
+  border: 1px solid purple;
+  text-align: center;
+  text-decoration: none;
+  line-height: 40px;
+  color: purple;
+  font-size: 20px;
+  /* transition: background-color 1s; */
+  transition: all 0.3s;
+}
+
+.button:hover {
+  background-color: purple;
+  color: white;
+  /* У hover transition не используем ! */
+  /* transition: background-color 1s; */
+}
+
+ul.a {
+  list-style-type: circle;
+}
+
+ul.b {
+  list-style-type: square;
+}
+
+ol.c {
+  list-style-type: upper-roman;
+}
+
+ol.d {
+  list-style-type: lower-alpha;
+}
+
+.list__item_new::after {
+  content: " new!";
+  color: red;
+}
+
+.drive {
+  margin-top: 32px;
+}
+
+.drive:hover .car {
+  margin-left: 1000px;
+}
+
+.car {
+  width: 150px;
+  height: 50px;
+  border: 1px solid #000;
+  transition: margin 3s;
+}
+
+/* cubic-bezxier */
+.car-1 {
+  transition-timing-function: ease;
+}
+
+.car-2 {
+  transition-timing-function: ease-in;
+}
+
+.car-3 {
+  transition-timing-function: ease-out;
+}
+
+.car-4 {
+  transition-timing-function: ease-in-out;
+}
+
+.car-5 {
+  /* линейная */
+  transition-timing-function: linear;
+}

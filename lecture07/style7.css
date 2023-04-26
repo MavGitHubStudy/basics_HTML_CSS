@@ -1,0 +1,70 @@
+.button {
+  display: block;
+  width: 120px;
+  height: 40px;
+  border: 1px solid purple;
+  text-align: center;
+  text-decoration: none;
+  line-height: 40px;
+  color: purple;
+  font-size: 20px;
+  /* transition: background-color 1s; */
+  transition: all 0.3s;
+}
+
+.button:hover {
+  background-color: purple;
+  color: white;
+  /* У hover transition не используем ! */
+  /* transition: background-color 1s; */
+}
+
+ul.a {
+  list-style-type: circle;
+}
+
+ul.b {
+  list-style-type: square;
+}
+
+ol.c {
+  list-style-type: upper-roman;
+}
+
+ol.d {
+  list-style-type: lower-alpha;
+}
+
+.list__item_new::after {
+  content: " new!";
+  color: red;
+}
+
+.bord {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.bord__item {
+  /* width: 150px; */
+  width: 250px;
+  height: 86px;
+  background-color: forestgreen;
+  transition: transform 1s;
+  position: absolute;
+}
+
+.bord__item-1 {
+  transform: rotate(60deg);
+}
+
+.bord__item-2:hover {
+  transform: translateY(-100px) scale(1.5);
+}
+
+.bord__item-3 {
+  transform: rotate(-60deg);
+}
