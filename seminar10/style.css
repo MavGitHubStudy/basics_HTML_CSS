@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.subscribe {
+  margin: 0 auto;
+  background-image: url("./img/sub.png");
+  background-repeat: no-repeat;
+  width: 1600px;
+  height: 448px;
+}
+
+.wrapper-layer {
+  background: rgba(244, 244, 244, 0.7);
+  width: 1600px;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .subscribe {
+    background-image: url("./img/sub2.png");
+    /* background-size: cover; */
+    width: 768px;
+    height: 693px;
+  }
+}
