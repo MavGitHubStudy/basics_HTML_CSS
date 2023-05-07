@@ -1232,7 +1232,8 @@ footer {
 
   .fetured_items_list {
     display: grid;
-    grid-template-columns: 359px;
+    /* grid-template-columns: 359px; */
+    grid-template-columns: 343px;
     grid-template-rows: 580px 580px 580px 580px 580px 580px;
     gap: 17px;
     padding-bottom: 41px; /* отступ для browse_all_product */
